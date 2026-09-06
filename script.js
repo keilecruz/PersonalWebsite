@@ -1,4 +1,6 @@
-// this is for allowing items to be moved around
+// this is for allowing tin-items to be moved around/also when clicking on a tin item
+// it will bring up the tin-item to the front if their is another placed right on top of it. 
+
 let highestZIndex = 1;
 
 const items = document.querySelectorAll(".tin-item");

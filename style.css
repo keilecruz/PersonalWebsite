@@ -24,7 +24,7 @@ body {
     filter: drop-shadow(8px 10px 6px rgba(0, 0, 0, 0.35));
 }
 
-/* tin items */
+/* tin items designs (also individual designs on certain tin-items)*/
 
 #tin-items {
     position: absolute;
@@ -51,6 +51,40 @@ body {
     width: 270px;
 }
 
+.tin-item[src*="cherry-sylvian"]{
+    width: 250px;
+}
+
+.tin-item[src*="chikawa-keychain"]{
+    width: 220px;
+}
+
 .tin-item:active {
     cursor: grabbing;
+}
+
+.tin-item:hover {
+    animation: tiny-shake 0.4s ease-in-out;
+}
+
+@keyframes tiny-shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-3px);
+    }
+
+    50% {
+        transform: translateX(3px);
+    }
+
+    75% {
+        transform: translateX(-2px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
