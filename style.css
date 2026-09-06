@@ -1,0 +1,56 @@
+/* this is the background image */
+body {
+    background-image: url("images/pink-green.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* tin box settings */
+
+#tin-box {
+    position: absolute;
+    width: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-5deg);
+}
+
+#tin-box > img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: drop-shadow(8px 10px 6px rgba(0, 0, 0, 0.35));
+}
+
+/* tin items */
+
+#tin-items {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.tin-item {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    cursor: grab;
+    filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.35));
+}
+
+.tin-item[src*="earbuds.png"] {
+    width: 320px;
+}
+
+.tin-item[src*="sony-camera.png"]{
+    width: 270px;
+}
+
+.tin-item:active {
+    cursor: grabbing;
+}
