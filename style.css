@@ -51,12 +51,24 @@ body {
     width: 270px;
 }
 
-.tin-item[src*="cherry-sylvian"]{
+.tin-item[src*="cherry-sylvian.png"]{
     width: 250px;
 }
 
-.tin-item[src*="chikawa-keychain"]{
+.tin-item[src*="chikawa-keychain.png"]{
     width: 220px;
+}
+
+.tin-item[src*="deer-lps.png"]{
+    width: 150px;
+}
+
+.tin-item[src*="white-bow.png"]{
+    width: 270px;
+}
+
+.tin-item[src*="lipbalm.png"]{
+    width: 250px;
 }
 
 .tin-item:active {
