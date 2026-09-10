@@ -5,6 +5,7 @@ let highestZIndex = 1;
 
 const items = document.querySelectorAll(".tin-item");
 
+// allowing items to be grabbed and moved around
 items.forEach((item, index) => {
 
     const itemName = "tin-item-" + index;
@@ -22,7 +23,7 @@ items.forEach((item, index) => {
 
         e.preventDefault();
 
-        // Bring clicked item to the front
+        // Bringing clicked items to the front
         highestZIndex++;
         item.style.zIndex = highestZIndex;
 
